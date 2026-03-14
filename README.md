@@ -1,4 +1,4 @@
-# school-digest
+# Schoolity Weekly Digest
 
 Weekly AI-summarized email digest from [Schoolity](https://www.schoolity.com) — a Swedish school platform.
 

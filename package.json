@@ -1,19 +1,19 @@
 {
-  "name": "school-digest",
+  "name": "schoolity-weekly-digest",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Weekly AI-summarized email digest from Schoolity",
+  "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/index.js",
+    "dry-run": "node src/index.js --dry-run",
+    "login": "node src/login.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
-    "@anthropic-ai/sdk": "^0.78.0",
     "@google/generative-ai": "^0.24.1",
-    "@playwright/test": "^1.58.2",
     "dotenv": "^17.3.1",
     "nodemailer": "^8.0.2",
     "playwright": "^1.58.2"
