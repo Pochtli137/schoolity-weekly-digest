@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node src/index.js",
     "dry-run": "node src/index.js --dry-run",
-    "login": "node src/login.js"
+    "login": "node src/login.js",
+    "keep-alive": "node src/keep-alive.js"
   },
   "keywords": [],
   "author": "",

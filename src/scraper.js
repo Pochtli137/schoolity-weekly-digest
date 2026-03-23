@@ -45,12 +45,11 @@ async function scrapeSchoolity() {
 
   // --- LOGIN ---
   console.log('Navigating to Schoolity...');
-  await page.goto('https://www.schoolity.com', { waitUntil: 'networkidle' });
+  await page.goto('https://www.schoolity.com/login/?autoinlog=true', { waitUntil: 'networkidle' });
 
-  // Wait for login — either already on /app or session expired
+  // Wait for login — autoinlog=true uses saved Google session automatically
   const currentUrl = page.url();
   if (!currentUrl.includes('schoolity.com/app')) {
-    // Wait up to 30s — if session is saved it redirects automatically
     try {
       await page.waitForURL(url => url.toString().includes('schoolity.com/app'), { timeout: 30_000 });
     } catch {
